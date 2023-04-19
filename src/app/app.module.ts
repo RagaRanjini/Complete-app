@@ -12,6 +12,8 @@ import { TestimonialComponent } from './pages/testimonial/testimonial.component'
 import { ReachusComponent } from './pages/reachus/reachus.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
+import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
+import { FeedbackBoxComponent } from './pages/testimonial/feedback-box/feedback-box.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.com
     AboutComponent,
     TestimonialComponent,
     ReachusComponent,
-    ContactBoxComponent
+    ContactBoxComponent,
+    ServiceBoxComponent,
+    FeedbackBoxComponent
   ],
   imports: [
     BrowserModule,
