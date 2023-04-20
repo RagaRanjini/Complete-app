@@ -15,6 +15,8 @@ import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.com
 import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
 import { FeedbackBoxComponent } from './pages/testimonial/feedback-box/feedback-box.component';
 import { QuoteitPipe } from './pipes/quoteit.pipe';
+import { FormsModule } from '@angular/forms';
+import { TypefilterPipe } from './pipes/typefilter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,14 +28,16 @@ import { QuoteitPipe } from './pipes/quoteit.pipe';
     ContactBoxComponent,
     ServiceBoxComponent,
     FeedbackBoxComponent,
-    QuoteitPipe
+    QuoteitPipe,
+    TypefilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
